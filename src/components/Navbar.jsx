@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import gsap from 'gsap';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,17 +28,58 @@ const Navbar = () => {
 
   return (
     <div className='w-full bg-card h-20 flex items-center justify-between px-6 md:px-16 fixed z-50'>
-      
+
       {/* Logo */}
       <h5 className='text-2xl text-orange-light font-bold'>Sanket P.</h5>
 
       {/* Desktop Menu */}
-      <div className='hidden md:flex items-center text-md text-white gap-12'>
-        <a href="#home" className={redirectionTag}>Home</a>
-        <a href="#about" className={redirectionTag}>About Me</a>
-        <a href="#resume" className={redirectionTag}>Education</a>
-        <a href="#resume" className={redirectionTag}>Projects</a>
-        <a href="#contact" className={redirectionTag}>Contact Me</a>
+      <div className='hidden md:flex items-center text-md text-white gap-12 '>
+        <Link
+          to="home"
+          smooth={true}
+          duration={500}
+          offset={-70} // useful if you have a sticky header
+          className='border-card border-b-2 hover:border-white transition-500 cursor-pointer'
+        >
+          Home
+        </Link>
+        <Link
+          to="about"
+          smooth={true}
+          duration={500}
+          // offset={-70} // useful if you have a sticky header
+          className='border-card border-b-2 hover:border-white transition-500 cursor-pointer'
+
+        >
+          About
+        </Link>
+        <Link
+          to="education"
+          smooth={true}
+          duration={500}
+          className='border-card border-b-2 hover:border-white transition-500 cursor-pointer'
+          // offset={-70} // useful if you have a sticky header
+        >
+          Education
+        </Link>
+        <Link
+          to="project"
+          smooth={true}
+          duration={500}
+          className='border-card border-b-2 hover:border-white transition-500 cursor-pointer'
+          offset={-70} // useful if you have a sticky header
+        >
+          Projects
+        </Link>
+        <Link
+          to="about"
+          smooth={true}
+          duration={500}
+          className='border-card border-b-2 hover:border-white transition-500 cursor-pointer'
+          offset={-70} // useful if you have a sticky header
+        >
+          Contact Me
+        </Link>
       </div>
 
       {/* Hamburger */}
@@ -53,11 +95,52 @@ const Navbar = () => {
           ref={menuRef}
           className="fixed top-20 right-0 w-1/2 h-fit bg-card z-40 rounded-bl-xl shadow-lg py-6 px-4 flex flex-col gap-6 text-white text-lg"
         >
-          <a href="#home" onClick={() => setMenuOpen(false)} className={redirectionTag}>Home</a>
-          <a href="#about" onClick={() => setMenuOpen(false)} className={redirectionTag}>About Me</a>
-          <a href="#resume" className={redirectionTag}>Education</a>
-          <a href="#resume" className={redirectionTag}>Projects</a>
-          <a href="#contact" onClick={() => setMenuOpen(false)} className={redirectionTag}>Contact Me</a>
+          <Link
+          to="home"
+          smooth={true}
+          duration={500}
+          offset={-70} // useful if you have a sticky header
+          className='border-card border-b-2 hover:border-white transition-500 cursor-pointer'
+        >
+          Home
+        </Link>
+        <Link
+          to="about"
+          smooth={true}
+          duration={500}
+          // offset={-70} // useful if you have a sticky header
+          className='border-card border-b-2 hover:border-white transition-500 cursor-pointer'
+
+        >
+          About
+        </Link>
+        <Link
+          to="education"
+          smooth={true}
+          duration={500}
+          className='border-card border-b-2 hover:border-white transition-500 cursor-pointer'
+          // offset={-70} // useful if you have a sticky header
+        >
+          Education
+        </Link>
+        <Link
+          to="about"
+          smooth={true}
+          duration={500}
+          className='border-card border-b-2 hover:border-white transition-500 cursor-pointer'
+          offset={-70} // useful if you have a sticky header
+        >
+          Projects
+        </Link>
+        <Link
+          to="about"
+          smooth={true}
+          duration={500}
+          className='border-card border-b-2 hover:border-white transition-500 cursor-pointer'
+          offset={-70} // useful if you have a sticky header
+        >
+          Contact Me
+        </Link>
         </div>
       )}
     </div>

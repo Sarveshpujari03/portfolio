@@ -2,9 +2,9 @@ import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
 import ParticlesBackground from '../components/PartialsBackground';
 
-const Home = () => {
+const Home = ({id}) => {
     return (
-        <div className='w-full h-full flex flex-col md:flex-row items-center justify-center px-4 md:px-10 gap-10 md:gap-0'>
+        <div className='w-full h-full flex flex-col md:flex-row items-center justify-center px-4 md:px-10 gap-10 md:gap-0' id={`${id}`}>
 
             <ParticlesBackground id={'tsparticles'}/>
             {/* Left - Image */}
@@ -35,7 +35,7 @@ const Home = () => {
                     />
                 </div>
 
-                <button className='text-white bg-card p-3 rounded-xl font-semibold text-md mt-4 hover:bg-gray'>Download Resume</button>
+                {/* <button className='text-white bg-card p-3 rounded-xl font-semibold text-md mt-4 hover:bg-gray'>Download Resume</button> */}
             </div>
         </div>
     );
