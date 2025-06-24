@@ -91,17 +91,7 @@ const AboutMe = ({ id }) => {
                                 I actively improve my problem-solving through <span className="text-orange-light">DSA practice</span> on LeetCode and love exploring new technologies like microservices and WebSockets. Outside of tech, I find balance in <span className="text-orange-light">photography</span>, <span className="text-orange-light">sketching</span>, and <span className="text-orange-light">cricket</span>.
                             </p>
 
-                            <div className='w-full flex gap-6 mt-4 text-white text-3xl'>
-                                <a href='https://github.com/Sanketpanchal98' target="_blank" rel="noopener noreferrer">
-                                    <i className="ri-github-fill hover:text-orange cursor-pointer"></i>
-                                </a>
-                                <a href='https://www.instagram.com/sanketpanchal24/' target="_blank" rel="noopener noreferrer">
-                                    <i className="ri-instagram-line hover:text-orange cursor-pointer"></i>
-                                </a>
-                                <a href='https://www.linkedin.com/in/sanket-panchal-785949261/' target="_blank" rel="noopener noreferrer">
-                                    <i className="ri-linkedin-box-fill hover:text-orange cursor-pointer"></i>
-                                </a>
-                            </div>
+                            <button className='p-3 bg-orange rounded-xl font-bold '>Download Resume</button>
 
                         </div>
                     </section>

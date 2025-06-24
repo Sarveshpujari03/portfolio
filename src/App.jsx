@@ -8,6 +8,8 @@ import AboutMe from './pages/AboutMe'
 import ParticlesComponent from './components/PartialsBackground'
 import Education from './pages/Education'
 import Projects from './pages/Projects'
+import Footer from './components/Footer'
+import ContactMe from './pages/ContactMe'
 
 function App() {
 
@@ -18,6 +20,8 @@ function App() {
       <AboutMe id="about"/>
       <Education id="education"/>
       <Projects id="project"/>
+      <ContactMe id="contactme"/>
+      {/* <Footer /> */}
     </div>
   )
 }

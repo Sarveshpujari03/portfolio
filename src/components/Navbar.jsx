@@ -72,7 +72,7 @@ const Navbar = () => {
           Projects
         </Link>
         <Link
-          to="about"
+          to="contactme"
           smooth={true}
           duration={500}
           className='border-card border-b-2 hover:border-white transition-500 cursor-pointer'
@@ -124,7 +124,7 @@ const Navbar = () => {
           Education
         </Link>
         <Link
-          to="about"
+          to="project"
           smooth={true}
           duration={500}
           className='border-card border-b-2 hover:border-white transition-500 cursor-pointer'
@@ -133,7 +133,7 @@ const Navbar = () => {
           Projects
         </Link>
         <Link
-          to="about"
+          to="contactme"
           smooth={true}
           duration={500}
           className='border-card border-b-2 hover:border-white transition-500 cursor-pointer'
