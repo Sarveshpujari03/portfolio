@@ -5,7 +5,7 @@ import { Link } from 'react-scroll'
 
 const Footer = () => {
     return (
-        <footer className='w-full bg-background mt-9 px-6 py-10 z-40'>
+        <footer className='w-full bg-gray-950 mt-9 px-6 py-10 z-40'>
             <div className='flex flex-col md:flex-row justify-between md:justify-evenly gap-10 text-white text-lg z-40'>
 
                 {/* About Section */}

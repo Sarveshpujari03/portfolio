@@ -64,40 +64,40 @@ const AboutMe = ({ id }) => {
         //     </div>
         // </section>
 
-        <section className='w-full h-full text-white bg-background p-5' id={`${id}`}>
+        <section className='w-full minh-full text-white bg-background p-5' id={`${id}`}>
 
-            <div className='w-full flex flex-col md:flex-row justify-center items-center p-5 h-full text-white bg-background gap-7'>
+            <div className='w-full flex flex-col md:flex-row justify-center items-center p-5 minh-full text-white bg-background gap-7'>
 
-                <div className='h-full w-full z-40 flex flex-col md:flex-row justify-center items-center'>
+                <div className='minh-full w-full z-40 flex flex-col md:flex-row justify-center items-center'>
 
-                    <div className='w-full md:w-4/12 flex justify-center z-0'>
+                    {/* <div className='w-full md:w-4/12 flex justify-center z-0'>
                         <img
                             src="/sanket_prof.jpg"
                             alt="Sanket Profile"
                             className='h-56 w-56 md:h-72 md:w-72 rounded-full object-cover border-4 border-white shadow-lg'
                         />
-                    </div>
+                    </div> */}
 
-                    <section id="about" className="w-full md:w-8/12 bg-card rounded-xl text-gray-base py-8 px-6 md:r-7">
+                    <section id="about" className="w-full md:w-8/12 h-full bg-card rounded-xl text-gray-base py-8 px-6 md:r-7">
                         <div className="max-w-4xl mx-auto text-left space-y-6">
 
                             <h2 className="text-3xl md:text-4xl font-bold font-poppins text-orange">About Me</h2>
 
                             <p className="text-base md:text-lg font-inter leading-relaxed">
-                                Hi! I’m <span className="text-orange font-semibold">Sanket Panchal</span>, a web developer with a passion for building clean, responsive, and intuitive interfaces using the MERN stack and Tailwind CSS. I enjoy crafting backend logic just as much as designing sleek user experiences.
+                                Hi! I’m <span className="text-orange font-semibold">Sanket Panchal</span> a dedicated and detail-oriented Full-Stack Web Developer with a strong focus on backend technologies and scalable system design. I specialize in the MERN stack (MongoDB, Express.js, React.js, Node.js) and have successfully built real-world projects such as a YouTube backend clone, a Job Board application, and an AI-powered Trip Planner. My technical strengths include building secure REST APIs, managing database schemas, and developing responsive user interfaces enhanced with GSAP animations.
                             </p>
 
                             <p className="text-base md:text-lg font-inter leading-relaxed">
-                                I actively improve my problem-solving through <span className="text-orange-light">DSA practice</span> on LeetCode and love exploring new technologies like microservices and WebSockets. Outside of tech, I find balance in <span className="text-orange-light">photography</span>, <span className="text-orange-light">sketching</span>, and <span className="text-orange-light">cricket</span>.
+                                I actively improve my problem-solving through <span className="text-orange-light">DSA practice</span> on LeetCode and love exploring new technologies like microservices and WebSockets. Outside of tech, I find balance in <span className="text-orange-light">photography</span>, <span className="text-orange-light">sketching</span>, and <span className="text-orange-light">cricket</span>. <br></br> <br></br>
+                                Currently, I am looking for internship or entry-level opportunities where I can apply my knowledge, collaborate with experienced professionals, and grow as a full-stack developer.
                             </p>
 
-                            <button className='p-3 bg-orange rounded-xl font-bold '>Download Resume</button>
+                            {/* <button className='p-3 bg-orange rounded-xl font-bold '>Download Resume</button> */}
 
                         </div>
                     </section>
 
                 </div>
-
             </div>
         </section>
 

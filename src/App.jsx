@@ -10,6 +10,7 @@ import Education from './pages/Education'
 import Projects from './pages/Projects'
 import Footer from './components/Footer'
 import ContactMe from './pages/ContactMe'
+import Skills from './pages/Skills'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <Navbar />
       <Home id="home"/>
       <AboutMe id="about"/>
+      <Skills id="skills"/>
       <Education id="education"/>
       <Projects id="project"/>
       <ContactMe id="contactme"/>

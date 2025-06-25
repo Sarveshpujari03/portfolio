@@ -17,7 +17,6 @@ const Home = ({id}) => {
                     <h1 className='text-orange'>Hello,&nbsp;</h1>
                     <h1 className='text-white'>My name is Sanket!!</h1>
                 </div>
-
                 <div className='flex flex-wrap justify-center md:justify-center text-3xl md:text-5xl font-semibold'>
                     <h1 className='text-white'>I&nbsp;am&nbsp;</h1>
                     <TypeAnimation
@@ -34,6 +33,7 @@ const Home = ({id}) => {
                         cursor={true}
                     />
                 </div>
+                <h1 className='text-white p-2'>“From backend logic to frontend finesse — I build the full picture.”</h1>
 
                 {/* <button className='text-white bg-card p-3 rounded-xl font-semibold text-md mt-4 hover:bg-gray'>Download Resume</button> */}
             </div>

@@ -54,6 +54,15 @@ const Navbar = () => {
           About
         </Link>
         <Link
+          to="skills"
+          smooth={true}
+          duration={500}
+          className='border-card border-b-2 hover:border-white transition-500 cursor-pointer'
+          // offset={-70} // useful if you have a sticky header
+        >
+          Skills
+        </Link>
+        <Link
           to="education"
           smooth={true}
           duration={500}
@@ -113,6 +122,15 @@ const Navbar = () => {
 
         >
           About
+        </Link>
+        <Link
+          to="skills"
+          smooth={true}
+          duration={500}
+          className='border-card border-b-2 hover:border-white transition-500 cursor-pointer'
+          // offset={-70} // useful if you have a sticky header
+        >
+          Skills
         </Link>
         <Link
           to="education"
