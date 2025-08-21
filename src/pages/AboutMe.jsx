@@ -1,109 +1,81 @@
-import React from 'react'
-import ParticlesBackground from '../components/PartialsBackground'
-import { Link, } from 'lucide-react'
+import React from "react";
+import { motion } from "framer-motion";
+import { User } from "lucide-react";
 
 const AboutMe = ({ id }) => {
-    return (
+  return (
+    <section
+      id={id}
+      className="w-full min-h-screen flex justify-center items-center px-6 py-16 bg-transparent text-white relative overflow-hidden"
+    >
+    
+      {/* Card */}
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.8 }}
+        whileHover={{ scale: 1.02 }}
+        className="relative z-10 max-w-5xl w-full bg-gray-900/50 backdrop-blur-xl rounded-3xl shadow-2xl p-10 md:p-14 border border-gray-700/40"
+      >
+        {/* Header */}
+        <div className="flex flex-col md:flex-row items-center gap-8">
+          
 
-        // <section className='w-full h-full text-white bg-background p-5' id={`${id}`}>
+          {/* Title */}
+          <div className="text-center md:text-left">
+            <h2 className="text-4xl font-bold font-poppins text-orange-400">
+              About Me
+            </h2>
+            <p className="text-gray-400 mt-2">
+              A little about who I am and what drives me 🚀
+            </p>
+          </div>
+        </div>
 
-        //     <div className='w-full md:w-full flex justify-center items-center p-5 h-full text-white bg-background' >
-        //         <container className='h-full w-full z-40 flex justify-center items-center gap-7'>
+        {/* Content */}
+        <div className="mt-8 space-y-6 text-gray-300 text-lg leading-relaxed font-inter">
+          <p>
+            Hi! I’m{" "}
+            <span className="text-orange-400 font-semibold">
+              Sarvesh Pujari
+            </span>
+            , a curious mind driven by a desire to understand how things work —
+            not just in tech, but in life. My journey into software development
+            began with a simple question:{" "}
+            <span className="italic text-orange-300">
+              "How does this actually work?"
+            </span>{" "}
+            That question turned into a passion for building things from scratch
+            and solving real-world problems through code.
+          </p>
 
-        //             <div className='w-full md:w-5/12 flex justify-center z-0 bg-rd-400'>
-        //                 <img
-        //                     src="/sanket_prof.jpg" // use '/' instead of 'public\' for correct path in React
-        //                     alt="Sanket Profile"
-        //                     className='h-72 w-72 md:h-80 md:w-80 rounded-full object-cover border-4 border-white shadow-lg'
-        //                 />
-        //             </div>
+          <p>
+            As a <span className="text-orange-400">Full-Stack Java Developer</span>, 
+            I thrive at the intersection of logic and creativity. The backend —
+            powered by Spring Boot — allows me to architect scalable systems,
+            while the frontend — built with React — is where I bring those
+            systems to life in sleek, intuitive interfaces.  
+            <span className="block mt-2 text-orange-300 font-medium">
+              The frontend shows how I present myself, the backend reveals how I think.
+            </span>
+          </p>
 
-        //             {/* <div className='w-full md:w-9/12 flex flex-col gap-6 justify-center z-0 p-4 bg-card rounded-xl'>
+          <p>
+            Beyond code, I find inspiration in{" "}
+            <span className="text-orange-300">photography</span>,{" "}
+            <span className="text-orange-300">cinematic videography</span>, and{" "}
+            <span className="text-orange-300">travel</span>. Capturing moments
+            and exploring new perspectives helps me stay creative, balanced, and
+            endlessly curious.
+          </p>
+        </div>
 
-        //                 <h1 className='w-full text-6xl font-semibold bg-card'>About Me</h1>
+        {/* Glow Accent Line */}
+        <div className="w-32 h-1 bg-gradient-to-r from-orange-400 to-pink-500 rounded-full mt-10 mx-auto md:mx-0"></div>
+      </motion.div>
+    </section>
+  );
+};
 
-        //                 <h1 className='w-full text-xl text-orange font-semibold bg-card'>
-        //                     Sanket Panchal
-        //                 </h1>
-
-        //                 <h1 className='text-white w-full md:w-full'>A passionate tech enthusiast having foundation of technical knowledge. I have ability to grasp thing
-        //                     early and apply them with accuracy and precision. Excels in communicating and working
-        //                     collaboratively</h1>
-
-        //                 <h1>
-
-        //                 </h1>
-
-        //             </div> */}
-
-        //             <section id="about" className="bg-card rounded-xl text-gray-base py-16 px-6">
-        //                 <div className="max-w-4xl mx-auto text-left space-y-6">
-        //                     <h2 className="text-3xl md:text-4xl font-bold font-poppins text-orange">About Me</h2>
-
-        //                     <p className="text-lg font-inter leading-relaxed">
-        //                         Hi! I’m <span className="text-orange font-semibold">Sanket Panchal</span>, a web developer with a passion for building clean, responsive, and intuitive interfaces using the MERN stack and Tailwind CSS. I enjoy crafting backend logic just as much as designing sleek user experiences.
-        //                     </p>
-
-        //                     <p className="text-lg font-inter leading-relaxed">
-        //                         I actively improve my problem-solving through <span className="text-orange-light">DSA practice</span> on LeetCode and love exploring new technologies like microservices and WebSockets. Outside of tech, I find balance in <span className="text-orange-light">photography</span>, <span className="text-orange-light">sketching</span>, and <span className="text-orange-light">cricket</span>.
-        //                     </p>
-
-        //                     <div className='w-full flex gap-7'>
-        //                         <a href='https://github.com/Sanketpanchal98'><i class="ri-github-fill  text-3xl cursor-pointer"></i></a>
-        //                         <a href='https://www.instagram.com/sanketpanchal24/'><i class="ri-instagram-line text-3xl cursor-pointer"></i></a>
-        //                         <a href='https://www.linkedin.com/in/sanket-panchal-785949261/'><i class="ri-linkedin-box-fill text-3xl cursor-pointer"></i></a>
-        //                     </div>
-
-        //                 </div>
-        //             </section>
-
-
-
-
-        //         </container>
-        //     </div>
-        // </section>
-
-        <section className='w-full minh-full text-white bg-background p-5' id={`${id}`}>
-
-            <div className='w-full flex flex-col md:flex-row justify-center items-center p-5 minh-full text-white bg-background gap-7'>
-
-                <div className='minh-full w-full z-40 flex flex-col md:flex-row justify-center items-center'>
-
-                    {/* <div className='w-full md:w-4/12 flex justify-center z-0'>
-                        <img
-                            src="/sanket_prof.jpg"
-                            alt="Sanket Profile"
-                            className='h-56 w-56 md:h-72 md:w-72 rounded-full object-cover border-4 border-white shadow-lg'
-                        />
-                    </div> */}
-
-                    <section id="about" className="w-full md:w-8/12 h-full bg-card rounded-xl text-gray-base py-8 px-6 md:r-7">
-                        <div className="max-w-4xl mx-auto text-left space-y-6">
-
-                            <h2 className="text-3xl md:text-4xl font-bold font-poppins text-orange">About Me</h2>
-
-                            <p className="text-base md:text-lg font-inter leading-relaxed">
-                                Hi! I’m <span className="text-orange font-semibold">Sanket Panchal</span> a dedicated and detail-oriented Full-Stack Web Developer with a strong focus on backend technologies and scalable system design. I specialize in the MERN stack (MongoDB, Express.js, React.js, Node.js) and have successfully built real-world projects such as a YouTube backend clone, a Job Board application, and an AI-powered Trip Planner. My technical strengths include building secure REST APIs, managing database schemas, and developing responsive user interfaces enhanced with GSAP animations.
-                            </p>
-
-                            <p className="text-base md:text-lg font-inter leading-relaxed">
-                                I actively improve my problem-solving through <span className="text-orange-light">DSA practice</span> on LeetCode and love exploring new technologies like microservices and WebSockets. Outside of tech, I find balance in <span className="text-orange-light">photography</span>, <span className="text-orange-light">sketching</span>, and <span className="text-orange-light">cricket</span>. <br></br> <br></br>
-                                Currently, I am looking for internship or entry-level opportunities where I can apply my knowledge, collaborate with experienced professionals, and grow as a full-stack developer.
-                            </p>
-
-                            {/* <button className='p-3 bg-orange rounded-xl font-bold '>Download Resume</button> */}
-
-                        </div>
-                    </section>
-
-                </div>
-            </div>
-        </section>
-
-
-
-    )
-}
-
-export default AboutMe
+export default AboutMe;
