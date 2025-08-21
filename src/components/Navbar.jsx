@@ -44,17 +44,16 @@ const Navbar = () => {
           to="about"
           smooth={true}
           duration={500}
-          offset={-150}
+          offset={-50}
           className="border-card border-b-2 hover:border-white transition-500 cursor-pointer"
         >
           About
         </Link>
-        {/* ✅ New Experience Link */}
         <Link
           to="experience"
           smooth={true}
           duration={500}
-          offset={-150}
+          offset={-240}
           className="border-card border-b-2 hover:border-white transition-500 cursor-pointer"
         >
           Experience
@@ -72,7 +71,7 @@ const Navbar = () => {
           to="education"
           smooth={true}
           duration={500}
-          offset={-70}
+          offset={-20}
           className="border-card border-b-2 hover:border-white transition-500 cursor-pointer"
         >
           Education
@@ -81,7 +80,7 @@ const Navbar = () => {
           to="project"
           smooth={true}
           duration={500}
-          offset={-70}
+          offset={-30}
           className="border-card border-b-2 hover:border-white transition-500 cursor-pointer"
         >
           Projects
@@ -145,7 +144,7 @@ const Navbar = () => {
             to="experience"
             smooth={true}
             duration={500}
-            offset={-70}
+            offset={-250}
             className="border-card border-b-2 hover:border-white transition-500 cursor-pointer"
           >
             Experience
@@ -163,7 +162,7 @@ const Navbar = () => {
             to="education"
             smooth={true}
             duration={500}
-            offset={-70}
+            offset={-30}
             className="border-card border-b-2 hover:border-white transition-500 cursor-pointer"
           >
             Education
@@ -172,7 +171,7 @@ const Navbar = () => {
             to="project"
             smooth={true}
             duration={500}
-            offset={-70}
+            offset={-10}
             className="border-card border-b-2 hover:border-white transition-500 cursor-pointer"
           >
             Projects
@@ -181,13 +180,13 @@ const Navbar = () => {
             to="resume"
             smooth={true}
             duration={500}
-            offset={-70}
+            offset={-285}
             className="border-card border-b-2 hover:border-white transition-500 cursor-pointer"
           >
             Resume
           </Link>
           <Link
-            to="contactme"
+            to="footer"
             smooth={true}
             duration={500}
             offset={-70}

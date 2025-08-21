@@ -17,7 +17,7 @@ const Experience = ({ id }) => {
   return (
     <div
       id={id}
-      className="w-full flex flex-col mb-12 gap-8 p-6 md:p-12 items-center text-white font-poppins"
+      className="w-full flex flex-col mb-48 gap-8 p-6 md:p-12 items-center text-white font-poppins"
     >
       <h1 className="z-40 text-3xl md:text-4xl font-semibold mt-6 w-full md:text-start">
         Experience
