@@ -5,55 +5,55 @@ const skillsData = [
   {
     category: "Programming Languages",
     items: [
-      { name: "C", icon: "/icons/C.png" },
-      { name: "C++", icon: "/icons/Cpp.png" },
-      { name: "Java", icon: "/icons/Java.png" },
-      { name: "JavaScript", icon: "/icons/JS.png" },
-      { name: "Python", icon: "/icons/Python.png" },
+      { name: "C", icon: `${import.meta.env.BASE_URL}icons/C.png` },
+      { name: "C++", icon: `${import.meta.env.BASE_URL}icons/Cpp.png` },
+      { name: "Java", icon: `${import.meta.env.BASE_URL}icons/Java.png` },
+      { name: "JavaScript", icon: `${import.meta.env.BASE_URL}icons/JS.png` },
+      { name: "Python", icon: `${import.meta.env.BASE_URL}icons/Python.png` },
     ],
   },
   {
     category: "Core & Advanced Java",
     items: [
-      { name: "OOP", icon: "/icons/OOP.png" },
-      { name: "JDBC", icon: "/icons/JDBC.jpg" },
-      { name: "Servlets", icon: "/icons/Servlet.jpg" },
+      { name: "OOP", icon: `${import.meta.env.BASE_URL}icons/OOP.png` },
+      { name: "JDBC", icon: `${import.meta.env.BASE_URL}icons/JDBC.jpg` },
+      { name: "Servlets", icon: `${import.meta.env.BASE_URL}icons/Servlet.jpg` },
     ],
   },
   {
     category: "Frontend",
     items: [
-      { name: "HTML", icon: "/icons/HTML.png" },
-      { name: "CSS", icon: "/icons/CSS.png" },
-      { name: "JavaScript", icon: "/icons/JS.png" },
-      { name: "Bootstrap", icon: "/icons/Bootstrap.png" },
-      { name: "Tailwind", icon: "/icons/Tailwind.png" },
-      { name: "React.js", icon: "/icons/React.png" },
+      { name: "HTML", icon: `${import.meta.env.BASE_URL}icons/HTML.png` },
+      { name: "CSS", icon: `${import.meta.env.BASE_URL}icons/CSS.png` },
+      { name: "JavaScript", icon: `${import.meta.env.BASE_URL}icons/JS.png` },
+      { name: "Bootstrap", icon: `${import.meta.env.BASE_URL}icons/Bootstrap.png` },
+      { name: "Tailwind", icon: `${import.meta.env.BASE_URL}icons/Tailwind.png` },
+      { name: "React.js", icon: `${import.meta.env.BASE_URL}icons/React.png` },
     ],
   },
   {
     category: "Backend",
     items: [
-      { name: "Spring Boot", icon: "/icons/Springboot.png" },
-      { name: "REST API", icon: "/icons/Rest.png" },
-      { name: "Hibernate", icon: "/icons/Hibernate.png" },
+      { name: "Spring Boot", icon: `${import.meta.env.BASE_URL}icons/Springboot.png` },
+      { name: "REST API", icon: `${import.meta.env.BASE_URL}icons/Rest.png` },
+      { name: "Hibernate", icon: `${import.meta.env.BASE_URL}icons/Hibernate.png` },
     ],
   },
   {
     category: "Databases",
     items: [
-      { name: "SQL", icon: "/icons/SQL.png" },
-      { name: "MongoDB", icon: "/icons/mongodb.png" },
+      { name: "SQL", icon: `${import.meta.env.BASE_URL}icons/SQL.png` },
+      { name: "MongoDB", icon: `${import.meta.env.BASE_URL}icons/mongodb.png` },
     ],
   },
   {
     category: "Tools & Version Control",
     items: [
-      { name: "GitHub", icon: "/icons/github.png" },
-      { name: "VS Code", icon: "/icons/vscode.png" },
-      { name: "Eclipse", icon: "/icons/Eclipse.png" },
-      { name: "IntelliJ", icon: "/icons/Intelij.jpg" },
-      { name: "Postman", icon: "/icons/postman.png" },
+      { name: "GitHub", icon: `${import.meta.env.BASE_URL}icons/github.png` },
+      { name: "VS Code", icon: `${import.meta.env.BASE_URL}icons/vscode.png` },
+      { name: "Eclipse", icon: `${import.meta.env.BASE_URL}icons/Eclipse.png` },
+      { name: "IntelliJ", icon: `${import.meta.env.BASE_URL}icons/Intelij.jpg` },
+      { name: "Postman", icon: `${import.meta.env.BASE_URL}icons/postman.png` },
     ],
   },
   {
@@ -67,6 +67,7 @@ const skillsData = [
     ],
   },
 ];
+
 
 const Skills = ({ id }) => {
   return (

@@ -22,7 +22,7 @@ const Resume= ({ id }) => {
             <i className="ri-download-2-line text-5xl md:text-6xl mb-2 text-orange-400"></i>
             <h2 className="text-lg md:text-xl mb-1">Download Resume</h2>
             <a
-              href="/Sarvesh Pujari.pdf" 
+              href={`${import.meta.env.BASE_URL}Sarvesh%20Pujari.pdf`} 
               download ="Sarvesh Pujari Resume.pdf"
               className="text-orange-300 text-sm md:text-base hover:underline"
               target="_blank"
